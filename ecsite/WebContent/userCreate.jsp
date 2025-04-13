@@ -10,7 +10,7 @@
 	<meta http-equiv="imagetoolbar" content="no" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
-	<title>Login画面</title>
+	<title>UserCreate画面</title>
 	
 	<style type = "text/css">
 		body{
@@ -53,11 +53,6 @@
 		background-color: black;
 		clear: both;
 		}
-		
-		#text-link{
-		display: inline-block;
-		text-align: right;
-		}
 	</style>
 </head>
 <body>
@@ -67,23 +62,41 @@
 	</div>
 	<div id = "main">
 		<div id = "top">
-			<p>Login</p>
+			<p>UserCreate</p>
 		</div>
 		<div>
-			<h3>商品を購入する際にはログインをお願いします。</h3>
-			<s:form action = "LoginAction">
-				<s:textfield name = "loginUserId" />
-				<s:password name = "loginPassword" />
-				<s:submit value = "ログイン" />
-			</s:form>
-			<br />
-			<div id = "text-link">
-				<p>新規ユーザー登録は
-				<a href = '<s:url action = "UserCreateAction"/>'>こちら
-				</a></p>
-				<p>Homeへ戻る場合は
-				<a href = '<s:url action = "GoHomeAction"/>'>こちら
-				</a></p>
+			<s:if test = "errorMessage != ''">
+				<s:property value = "errorMessage" escape = "false"/>
+			</s:if>
+			<table>
+				<s:form action = "UserCreateConfilmAction">
+					<tr>
+						<td>
+							<label>ログインID:</label>
+						</td>
+						<td>
+							<input type = "text"
+							name = "loginUserId"
+							value = "" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>ログインPASS:</label>
+						</td>
+						<td>
+							<input type = "text"
+							name = "userName"
+							value = "" />
+						</td>
+					</tr>
+					<s:submit value = "登録" />
+				</s:form>
+			</table>
+			<div>
+				<span>前画面に戻る場合は</span>
+				<a href = '<s:url action = "HomeAction"/>'>
+				こちら</a>
 			</div>
 		</div>
 	</div>
