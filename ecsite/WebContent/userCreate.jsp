@@ -69,7 +69,7 @@
 				<s:property value = "errorMessage" escape = "false"/>
 			</s:if>
 			<table>
-				<s:form action = "UserCreateConfilmAction">
+				<s:form action = "UserCreateConfirmAction">
 					<tr>
 						<td>
 							<label>ログインID:</label>
@@ -83,6 +83,16 @@
 					<tr>
 						<td>
 							<label>ログインPASS:</label>
+						</td>
+						<td>
+							<input type = "text"
+							name = "loginPassword"
+							value = "" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>ユーザー名:</label>
 						</td>
 						<td>
 							<input type = "text"
