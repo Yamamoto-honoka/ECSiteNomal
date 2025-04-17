@@ -6,7 +6,7 @@ public class LoginDTO {
 	private String userName;
 	private boolean loginFlg = false;
 	
-	public String getloginId() {
+	public String getLoginId() {
 		return loginId;
 	}
 	
