@@ -36,8 +36,10 @@ create table user_buy_item_transaction(
 	delete_date datetime
 );
 
-INSERT INTO item_info_transaction(item_name, item_price, item_stock) 
+INSERT INTO item_info_transaction
+(item_name, item_price, item_stock) 
 VALUES("ノートBook", 100,50);
 
-INSERT INTO login_user_transaction(login_id, login_pass, user_name) 
+INSERT INTO login_user_transaction
+(login_id, login_pass, user_name) 
 VALUES("diworks","diworks01", "test");

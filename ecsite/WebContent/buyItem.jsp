@@ -4,10 +4,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta http-equiv="Content-Style-Type" content="text/css" />
-	<meta http-equiv="Content-Script-Type" content="text/javascript" />
-	<meta http-equiv="imagetoolbar" content="no" />
+	<meta http-equiv="Content-Type" 
+	content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Style-Type" 
+	content="text/css" />
+	<meta http-equiv="Content-Script-Type" 
+	content="text/javascript" />
+	<meta http-equiv="imagetoolbar" 
+	content="no" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<title>BuyItem画面</title>
@@ -72,7 +76,8 @@
 						<span>商品名</span>
 					</td>
 					<td>
-						<s:property value = "session.buyItem_name" />
+						<s:property value = 
+						"session.buyItem_name" />
 						<br>
 					</td>
 				</tr>
@@ -81,7 +86,8 @@
 						<span>値段</span>
 					</td>
 					<td>
-						<s:property value = "session.buyItem_price" />
+						<s:property value = 
+						"session.buyItem_price" />
 						<span>円</span>
 					</td>
 				</tr>
